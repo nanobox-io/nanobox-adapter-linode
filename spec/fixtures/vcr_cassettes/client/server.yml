@@ -1,0 +1,121 @@
+---
+http_interactions:
+- request:
+    method: post
+    uri: https://api.linode.com/
+    body:
+      encoding: UTF-8
+      string: api_key=h7IX5qQy0Myde3Jatcww9QwAn4t0VAL5Y1bubFwgecCJecfNWbvYrYFHonvC726h&api_action=linode.list&api_responseFormat=json&LinodeId=3068345
+    headers:
+      Accept-Encoding:
+      - gzip;q=1.0,deflate;q=0.6,identity;q=0.3
+      Accept:
+      - "*/*"
+      User-Agent:
+      - Ruby
+  response:
+    status:
+      code: 200
+      message: OK
+    headers:
+      Server:
+      - nginx
+      Date:
+      - Wed, 03 May 2017 21:10:12 GMT
+      Content-Type:
+      - application/json;charset=UTF-8
+      Transfer-Encoding:
+      - chunked
+      Connection:
+      - keep-alive
+      X-Powered-By:
+      - Tiger Blood
+      Access-Control-Allow-Origin:
+      - "*"
+      Strict-Transport-Security:
+      - max-age=31536000
+    body:
+      encoding: UTF-8
+      string: '{"ACTION":"linode.list","DATA":[{"TOTALXFER":1000,"ALERT_BWQUOTA_ENABLED":1,"ALERT_DISKIO_ENABLED":1,"DISTRIBUTIONVENDOR":"Ubuntu","ALERT_BWOUT_ENABLED":1,"ALERT_CPU_THRESHOLD":90,"LINODEID":3068345,"ALERT_BWOUT_THRESHOLD":10,"BACKUPWINDOW":0,"DATACENTERID":3,"ALERT_BWIN_ENABLED":1,"STATUS":1,"PLANID":1,"LABEL":"test-bot","ALERT_BWIN_THRESHOLD":10,"ALERT_CPU_ENABLED":1,"BACKUPSENABLED":0,"TOTALRAM":1024,"WATCHDOG":1,"CREATE_DT":"2017-05-03
+        17:06:15.0","ISKVM":1,"ALERT_BWQUOTA_THRESHOLD":80,"BACKUPWEEKLYDAY":0,"TOTALHD":20480,"LPM_DISPLAYGROUP":"","ALERT_DISKIO_THRESHOLD":10000,"ISXEN":0}],"ERRORARRAY":[]}'
+    http_version: 
+  recorded_at: Wed, 03 May 2017 21:10:12 GMT
+- request:
+    method: post
+    uri: https://api.linode.com/
+    body:
+      encoding: UTF-8
+      string: api_key=h7IX5qQy0Myde3Jatcww9QwAn4t0VAL5Y1bubFwgecCJecfNWbvYrYFHonvC726h&api_action=linode.ip.list&api_responseFormat=json
+    headers:
+      Accept-Encoding:
+      - gzip;q=1.0,deflate;q=0.6,identity;q=0.3
+      Accept:
+      - "*/*"
+      User-Agent:
+      - Ruby
+  response:
+    status:
+      code: 200
+      message: OK
+    headers:
+      Server:
+      - nginx
+      Date:
+      - Wed, 03 May 2017 21:10:13 GMT
+      Content-Type:
+      - application/json;charset=UTF-8
+      Transfer-Encoding:
+      - chunked
+      Connection:
+      - keep-alive
+      X-Powered-By:
+      - Tiger Blood
+      Access-Control-Allow-Origin:
+      - "*"
+      Strict-Transport-Security:
+      - max-age=31536000
+    body:
+      encoding: UTF-8
+      string: '{"ACTION":"linode.ip.list","DATA":[{"RDNS_NAME":"li592-169.members.linode.com","ISPUBLIC":1,"IPADDRESS":"192.81.130.169","LINODEID":3068345,"IPADDRESSID":167727},{"RDNS_NAME":"p463-186.members.linode.com","ISPUBLIC":0,"IPADDRESS":"192.168.137.186","LINODEID":3068345,"IPADDRESSID":400217}],"ERRORARRAY":[]}'
+    http_version: 
+  recorded_at: Wed, 03 May 2017 21:10:13 GMT
+- request:
+    method: post
+    uri: https://api.linode.com/
+    body:
+      encoding: UTF-8
+      string: api_key=h7IX5qQy0Myde3Jatcww9QwAn4t0VAL5Y1bubFwgecCJecfNWbvYrYFHonvC726h&api_action=linode.ip.list&api_responseFormat=json
+    headers:
+      Accept-Encoding:
+      - gzip;q=1.0,deflate;q=0.6,identity;q=0.3
+      Accept:
+      - "*/*"
+      User-Agent:
+      - Ruby
+  response:
+    status:
+      code: 200
+      message: OK
+    headers:
+      Server:
+      - nginx
+      Date:
+      - Wed, 03 May 2017 21:10:13 GMT
+      Content-Type:
+      - application/json;charset=UTF-8
+      Transfer-Encoding:
+      - chunked
+      Connection:
+      - keep-alive
+      X-Powered-By:
+      - Tiger Blood
+      Access-Control-Allow-Origin:
+      - "*"
+      Strict-Transport-Security:
+      - max-age=31536000
+    body:
+      encoding: UTF-8
+      string: '{"ACTION":"linode.ip.list","DATA":[{"RDNS_NAME":"li592-169.members.linode.com","ISPUBLIC":1,"IPADDRESS":"192.81.130.169","LINODEID":3068345,"IPADDRESSID":167727},{"RDNS_NAME":"p463-186.members.linode.com","ISPUBLIC":0,"IPADDRESS":"192.168.137.186","LINODEID":3068345,"IPADDRESSID":400217}],"ERRORARRAY":[]}'
+    http_version: 
+  recorded_at: Wed, 03 May 2017 21:10:13 GMT
+recorded_with: VCR 3.0.3

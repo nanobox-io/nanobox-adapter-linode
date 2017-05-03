@@ -1,0 +1,276 @@
+---
+http_interactions:
+- request:
+    method: post
+    uri: https://api.linode.com/
+    body:
+      encoding: UTF-8
+      string: api_key=h7IX5qQy0Myde3Jatcww9QwAn4t0VAL5Y1bubFwgecCJecfNWbvYrYFHonvC726h&api_action=linode.create&api_responseFormat=json&DatacenterID=3&PlanID=1
+    headers:
+      Accept-Encoding:
+      - gzip;q=1.0,deflate;q=0.6,identity;q=0.3
+      Accept:
+      - "*/*"
+      User-Agent:
+      - Ruby
+  response:
+    status:
+      code: 200
+      message: OK
+    headers:
+      Server:
+      - nginx
+      Date:
+      - Wed, 03 May 2017 21:06:16 GMT
+      Content-Type:
+      - application/json;charset=UTF-8
+      Transfer-Encoding:
+      - chunked
+      Connection:
+      - keep-alive
+      X-Powered-By:
+      - Tiger Blood
+      Access-Control-Allow-Origin:
+      - "*"
+      Strict-Transport-Security:
+      - max-age=31536000
+    body:
+      encoding: UTF-8
+      string: '{"ACTION":"linode.create","DATA":{"LinodeID":3068345},"ERRORARRAY":[]}'
+    http_version: 
+  recorded_at: Wed, 03 May 2017 21:06:16 GMT
+- request:
+    method: post
+    uri: https://api.linode.com/
+    body:
+      encoding: UTF-8
+      string: api_key=h7IX5qQy0Myde3Jatcww9QwAn4t0VAL5Y1bubFwgecCJecfNWbvYrYFHonvC726h&api_action=linode.update&api_responseFormat=json&LinodeId=3068345&label=test-bot
+    headers:
+      Accept-Encoding:
+      - gzip;q=1.0,deflate;q=0.6,identity;q=0.3
+      Accept:
+      - "*/*"
+      User-Agent:
+      - Ruby
+  response:
+    status:
+      code: 200
+      message: OK
+    headers:
+      Server:
+      - nginx
+      Date:
+      - Wed, 03 May 2017 21:06:16 GMT
+      Content-Type:
+      - application/json;charset=UTF-8
+      Transfer-Encoding:
+      - chunked
+      Connection:
+      - keep-alive
+      X-Powered-By:
+      - Tiger Blood
+      Access-Control-Allow-Origin:
+      - "*"
+      Strict-Transport-Security:
+      - max-age=31536000
+    body:
+      encoding: UTF-8
+      string: '{"ACTION":"linode.update","DATA":{"LinodeID":3068345},"ERRORARRAY":[]}'
+    http_version: 
+  recorded_at: Wed, 03 May 2017 21:06:16 GMT
+- request:
+    method: post
+    uri: https://api.linode.com/
+    body:
+      encoding: UTF-8
+      string: api_key=h7IX5qQy0Myde3Jatcww9QwAn4t0VAL5Y1bubFwgecCJecfNWbvYrYFHonvC726h&api_action=linode.ip.addprivate&api_responseFormat=json&LinodeId=3068345
+    headers:
+      Accept-Encoding:
+      - gzip;q=1.0,deflate;q=0.6,identity;q=0.3
+      Accept:
+      - "*/*"
+      User-Agent:
+      - Ruby
+  response:
+    status:
+      code: 200
+      message: OK
+    headers:
+      Server:
+      - nginx
+      Date:
+      - Wed, 03 May 2017 21:06:17 GMT
+      Content-Type:
+      - application/json;charset=UTF-8
+      Transfer-Encoding:
+      - chunked
+      Connection:
+      - keep-alive
+      X-Powered-By:
+      - Tiger Blood
+      Access-Control-Allow-Origin:
+      - "*"
+      Strict-Transport-Security:
+      - max-age=31536000
+    body:
+      encoding: UTF-8
+      string: '{"ACTION":"linode.ip.addprivate","DATA":{"IPADDRESS":"192.168.137.186","IPADDRESSID":400217},"ERRORARRAY":[]}'
+    http_version: 
+  recorded_at: Wed, 03 May 2017 21:06:17 GMT
+- request:
+    method: post
+    uri: https://api.linode.com/
+    body:
+      encoding: UTF-8
+      string: api_key=h7IX5qQy0Myde3Jatcww9QwAn4t0VAL5Y1bubFwgecCJecfNWbvYrYFHonvC726h&api_action=linode.disk.createfromdistribution&api_responseFormat=json&LinodeID=3068345&DistributionID=146&Label=nanobox-disk&Size=18976&rootSSHKey=ssh-rsa%20AAAAB3NzaC1yc2EAAAADAQABAAABAQDWYkCuD5pgtFCNWGeuvsRzZBtr7cp2vDKZ%2BYFi4j7z13IKuzkf%2BT7o23kaAENWitAUYel%2BrWcCIZbMh58NkNfVjgJI6j4FFKPFwMAmDRXWJxRqjjIm4B4i1HT%2F42RetU41VbP535TGX%2BwuCWk2G0o839%2BGWP6jWXcLP3Z3mm69Qzkdz02vdKkfdDpcX%2FQqPq93pDoceMyGoZvpsZ4J%2FWw769KAZCvseEU9jI03iXK2ur9lUGmzbrTfGFSVV7qSBi3ffMlU5dL9hSZCzDtEGX6UjzbDiuyKtPliGQ0m%2BXFNNG9dztjr67hQ7wBdih%2BsCUcw8tr%2BXJAMQrYGW5YReHnl&rootPass=26be66d386a3537bffbc033755715052f33843f219bc4cfd73548e9fcc406ce917566da9e70f5127c507e671af850f5d3782
+    headers:
+      Accept-Encoding:
+      - gzip;q=1.0,deflate;q=0.6,identity;q=0.3
+      Accept:
+      - "*/*"
+      User-Agent:
+      - Ruby
+  response:
+    status:
+      code: 200
+      message: OK
+    headers:
+      Server:
+      - nginx
+      Date:
+      - Wed, 03 May 2017 21:06:18 GMT
+      Content-Type:
+      - application/json;charset=UTF-8
+      Transfer-Encoding:
+      - chunked
+      Connection:
+      - keep-alive
+      X-Powered-By:
+      - Tiger Blood
+      Access-Control-Allow-Origin:
+      - "*"
+      Strict-Transport-Security:
+      - max-age=31536000
+    body:
+      encoding: UTF-8
+      string: '{"ACTION":"linode.disk.createfromdistribution","DATA":{"DiskID":7881227,"JobID":48877488},"ERRORARRAY":[]}'
+    http_version: 
+  recorded_at: Wed, 03 May 2017 21:06:18 GMT
+- request:
+    method: post
+    uri: https://api.linode.com/
+    body:
+      encoding: UTF-8
+      string: api_key=h7IX5qQy0Myde3Jatcww9QwAn4t0VAL5Y1bubFwgecCJecfNWbvYrYFHonvC726h&api_action=linode.disk.create&api_responseFormat=json&LinodeID=3068345&Type=swap&Size=1024&Label=nanobox-swap
+    headers:
+      Accept-Encoding:
+      - gzip;q=1.0,deflate;q=0.6,identity;q=0.3
+      Accept:
+      - "*/*"
+      User-Agent:
+      - Ruby
+  response:
+    status:
+      code: 200
+      message: OK
+    headers:
+      Server:
+      - nginx
+      Date:
+      - Wed, 03 May 2017 21:06:18 GMT
+      Content-Type:
+      - application/json;charset=UTF-8
+      Transfer-Encoding:
+      - chunked
+      Connection:
+      - keep-alive
+      X-Powered-By:
+      - Tiger Blood
+      Access-Control-Allow-Origin:
+      - "*"
+      Strict-Transport-Security:
+      - max-age=31536000
+    body:
+      encoding: UTF-8
+      string: '{"ACTION":"linode.disk.create","DATA":{"DiskID":7881228,"JobID":48877489},"ERRORARRAY":[]}'
+    http_version: 
+  recorded_at: Wed, 03 May 2017 21:06:18 GMT
+- request:
+    method: post
+    uri: https://api.linode.com/
+    body:
+      encoding: UTF-8
+      string: api_key=h7IX5qQy0Myde3Jatcww9QwAn4t0VAL5Y1bubFwgecCJecfNWbvYrYFHonvC726h&api_action=linode.config.create&api_responseFormat=json&LinodeID=3068345&KernelID=210&Label=nanobox-profile&DiskList=7881227%2C7881228
+    headers:
+      Accept-Encoding:
+      - gzip;q=1.0,deflate;q=0.6,identity;q=0.3
+      Accept:
+      - "*/*"
+      User-Agent:
+      - Ruby
+  response:
+    status:
+      code: 200
+      message: OK
+    headers:
+      Server:
+      - nginx
+      Date:
+      - Wed, 03 May 2017 21:06:19 GMT
+      Content-Type:
+      - application/json;charset=UTF-8
+      Transfer-Encoding:
+      - chunked
+      Connection:
+      - keep-alive
+      X-Powered-By:
+      - Tiger Blood
+      Access-Control-Allow-Origin:
+      - "*"
+      Strict-Transport-Security:
+      - max-age=31536000
+    body:
+      encoding: UTF-8
+      string: '{"ACTION":"linode.config.create","DATA":{"ConfigID":4107155},"ERRORARRAY":[]}'
+    http_version: 
+  recorded_at: Wed, 03 May 2017 21:06:19 GMT
+- request:
+    method: post
+    uri: https://api.linode.com/
+    body:
+      encoding: UTF-8
+      string: api_key=h7IX5qQy0Myde3Jatcww9QwAn4t0VAL5Y1bubFwgecCJecfNWbvYrYFHonvC726h&api_action=linode.boot&api_responseFormat=json&LinodeID=3068345&ConfigID=4107155
+    headers:
+      Accept-Encoding:
+      - gzip;q=1.0,deflate;q=0.6,identity;q=0.3
+      Accept:
+      - "*/*"
+      User-Agent:
+      - Ruby
+  response:
+    status:
+      code: 200
+      message: OK
+    headers:
+      Server:
+      - nginx
+      Date:
+      - Wed, 03 May 2017 21:06:19 GMT
+      Content-Type:
+      - application/json;charset=UTF-8
+      Transfer-Encoding:
+      - chunked
+      Connection:
+      - keep-alive
+      X-Powered-By:
+      - Tiger Blood
+      Access-Control-Allow-Origin:
+      - "*"
+      Strict-Transport-Security:
+      - max-age=31536000
+    body:
+      encoding: UTF-8
+      string: '{"ACTION":"linode.boot","DATA":{"JobID":48877490},"ERRORARRAY":[]}'
+    http_version: 
+  recorded_at: Wed, 03 May 2017 21:06:19 GMT
+recorded_with: VCR 3.0.3

@@ -1,0 +1,43 @@
+---
+http_interactions:
+- request:
+    method: post
+    uri: https://api.linode.com/
+    body:
+      encoding: UTF-8
+      string: api_key=h7IX5qQy0Myde3Jatcww9QwAn4t0VAL5Y1bubFwgecCJecfNWbvYrYFHonvC726h&api_action=account.info&api_responseFormat=json
+    headers:
+      Accept-Encoding:
+      - gzip;q=1.0,deflate;q=0.6,identity;q=0.3
+      Accept:
+      - "*/*"
+      User-Agent:
+      - Ruby
+  response:
+    status:
+      code: 200
+      message: OK
+    headers:
+      Server:
+      - nginx
+      Date:
+      - Wed, 03 May 2017 20:45:14 GMT
+      Content-Type:
+      - application/json;charset=UTF-8
+      Transfer-Encoding:
+      - chunked
+      Connection:
+      - keep-alive
+      X-Powered-By:
+      - Tiger Blood
+      Access-Control-Allow-Origin:
+      - "*"
+      Strict-Transport-Security:
+      - max-age=31536000
+    body:
+      encoding: UTF-8
+      string: '{"ACTION":"account.info","DATA":{"BILLING_METHOD":"metered","ACTIVE_SINCE":"2017-04-25
+        11:10:19.0","TRANSFER_POOL":25,"TRANSFER_USED":1,"TRANSFER_BILLABLE":0,"MANAGED":false,"BALANCE":-24.7000},"ERRORARRAY":[]}'
+    http_version: 
+  recorded_at: Wed, 03 May 2017 20:45:14 GMT
+recorded_with: VCR 3.0.3

@@ -1,0 +1,42 @@
+---
+http_interactions:
+- request:
+    method: post
+    uri: https://api.linode.com/
+    body:
+      encoding: UTF-8
+      string: api_key=h7IX5qQy0Myde3Jatcww9QwAn4t0VAL5Y1bubFwgecCJecfNWbvYrYFHonvC726h&api_action=linode.delete&api_responseFormat=json&LinodeId=3068345&skipChecks=true
+    headers:
+      Accept-Encoding:
+      - gzip;q=1.0,deflate;q=0.6,identity;q=0.3
+      Accept:
+      - "*/*"
+      User-Agent:
+      - Ruby
+  response:
+    status:
+      code: 200
+      message: OK
+    headers:
+      Server:
+      - nginx
+      Date:
+      - Wed, 03 May 2017 21:18:55 GMT
+      Content-Type:
+      - application/json;charset=UTF-8
+      Transfer-Encoding:
+      - chunked
+      Connection:
+      - keep-alive
+      X-Powered-By:
+      - Tiger Blood
+      Access-Control-Allow-Origin:
+      - "*"
+      Strict-Transport-Security:
+      - max-age=31536000
+    body:
+      encoding: UTF-8
+      string: '{"ACTION":"linode.delete","DATA":{"LinodeID":3068345},"ERRORARRAY":[]}'
+    http_version: 
+  recorded_at: Wed, 03 May 2017 21:18:55 GMT
+recorded_with: VCR 3.0.3
