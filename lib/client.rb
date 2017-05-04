@@ -56,8 +56,8 @@ class Client
   end
 
   def server_rename(id, name)
-    # replace dots with underscores since Linode doesn't allow them
-    l_client.linode.update(LinodeId: id.to_i, label: name.gsub('.', '_'))
+    # label has 32 character limit, linode will truncate silently
+    l_client.linode.update(LinodeId: id.to_i, label: name)
   end
 
   def server_start(id)

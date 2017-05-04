@@ -15,7 +15,7 @@ class Meta
         # options: reference, object
         ssh_key_method:    'object',
         can_reboot:        true,
-        can_rename:        true,
+        can_rename:        false,
         credential_fields: [{ key: :api_key, label: 'API Key' }],
         instructions:      instructions
       }

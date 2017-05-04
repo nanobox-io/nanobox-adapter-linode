@@ -8,7 +8,7 @@ An implementation of the [Nanobox Custom Provider](https://docs.nanobox.io/provi
 ### Update Catalog
 
 ### Local Evars
-A DigitalOcean Access Token is required to update the catalog files.
+A Linode API key is required to update the catalog files.
 `nanobox evar add local API_KEY=your_linode_api_key`
 Update catalog config files.
 `bundle exec rake catalog:update`
