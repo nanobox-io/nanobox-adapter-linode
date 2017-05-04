@@ -40,6 +40,11 @@ class Client
     l_client.linode.boot(LinodeID: linode.linodeid, ConfigID: config.configid)
     # return id for Odin
     linode.linodeid
+  rescue StandardError => e
+    # clean up since no way of maintaining state
+    # the next attempt will have to start over at the beginning
+    server_delete(linode.linodeid) if linode
+    raise e
   end
 
   def server_delete(id)
