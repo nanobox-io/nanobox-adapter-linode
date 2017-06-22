@@ -3,7 +3,7 @@ class Meta
     def attrs
       {
         id:                'ln',
-        name:              'Linode(beta)',
+        name:              'Linode',
         server_nick_name:  'linode',
         default_region:    '3',
         default_plan:      'standard',
