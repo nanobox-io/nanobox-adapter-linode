@@ -153,7 +153,8 @@ class Client
       # GRUB 2
       KernelID: 210,
       Label: "nanobox-profile",
-      DiskList: disks
+      DiskList: disks,
+      helper_network: true
     )
   end
 
