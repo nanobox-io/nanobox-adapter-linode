@@ -26,9 +26,7 @@ class Meta
     def instructions
     <<-INSTR
 <a href="//manager.linode.com/profile/api" target="_blank">Create
-an API Key</a> in your Linode Account, then add it here. Please note this
-Nanobox integration is still undergoing beta testing and should not be relied
-upon for production use.
+an API Key</a> in your Linode Account, then add it here.
     INSTR
     end
   end
